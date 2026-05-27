@@ -1,163 +1,131 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>마곡 코인노래방 가이드 - 진짜 형들의 운영 철학</title>
-    <meta name="description" content="마곡 지역 밤문화를 건전하고 실속 있게 즐길 수 있도록 돕는 마곡 코인노래방 가이드의 스토리와 비전을 선언합니다.">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary: hsl(210, 100%, 55%);
-            --secondary: hsl(195, 100%, 50%);
-            --dark: hsl(220, 30%, 7%);
-            --card-bg: hsl(220, 30%, 13%);
-            --text: hsl(0, 0%, 94%);
-            --text-muted: hsl(220, 10%, 70%);
-            --border: hsl(210, 45%, 18%);
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            background-color: var(--dark);
-            color: var(--text);
-            font-family: 'Outfit', 'Noto Sans KR', sans-serif;
-            line-height: 1.7;
-            padding-bottom: 60px;
-        }
-        header {
-            background: linear-gradient(135deg, var(--dark), var(--card-bg));
-            border-bottom: 2px solid var(--border);
-            padding: 20px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            backdrop-filter: blur(10px);
-        }
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            font-size: 1.5rem;
-            font-weight: 800;
-            background: linear-gradient(to right, var(--primary), var(--secondary));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        nav a {
-            color: var(--text);
-            text-decoration: none;
-            margin-left: 20px;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        nav a:hover {
-            color: var(--primary);
-        }
-        .main-content {
-            max-width: 800px;
-            margin: 60px auto;
-            padding: 0 20px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 30px;
-            border-left: 6px solid var(--primary);
-            padding-left: 20px;
-        }
-        p {
-            margin-bottom: 20px;
-            color: var(--text-muted);
-        }
-        .highlight-box {
-            background: linear-gradient(135deg, var(--card-bg), var(--dark));
-            border: 1px dashed var(--secondary);
-            border-radius: 12px;
-            padding: 25px;
-            margin: 30px 0;
-        }
-        .team-profile {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background-color: var(--card-bg);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 20px;
-            margin-top: 30px;
-        }
-        .team-profile h3 {
-            color: var(--secondary);
-            margin-bottom: 5px;
-        }
-        footer {
-            background-color: #050b12;
-            padding: 40px 20px;
-            border-top: 1px solid var(--border);
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.9rem;
-            margin-top: 80px;
-        }
-        footer p {
-            margin-bottom: 10px;
-        }
-        footer strong {
-            color: var(--text);
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오시는 길 & 가격 정보 | 마곡 코인노래방 상세 매뉴얼</title>
+  <meta name="description" content="가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 마곡 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나...">
+  <link rel="canonical" href="https://t3b05-mg-coin-guide-1.pages.dev/about.html">
+  <meta name="bpaas-design-system" content="editorial-luxury">
+  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+      :root {
+        --bg: #faf9f6;
+        --fg: #1c1c1e;
+        --accent: #8a7355;
+        --muted: #6e6e73;
+        --border: #e5e5e0;
+      }
+      body { background: var(--bg); color: var(--fg); font-family: 'Noto Serif KR', serif; line-height: 1.8; }
+      header { border-bottom: 1px solid var(--border); padding: 20px 0; }
+      .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+      .hero { padding: 80px 0; text-align: left; border-bottom: 1px solid var(--border); }
+      .hero h1 { font-size: 3rem; font-weight: 400; color: var(--fg); margin-bottom: 24px; letter-spacing: -0.03em; }
+      .btn { display: inline-block; padding: 12px 36px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s; }
+      .btn:hover { background: var(--accent); color: #fff; }
+      .content-section { padding: 60px 0; }
+      .card { border-bottom: 1px solid var(--border); padding: 32px 0; }
+      .card h3 { font-size: 1.4rem; font-weight: 500; margin-bottom: 12px; }
+      .review-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
+      .review-card { border: 1px solid var(--border); padding: 24px; background: #fff; }
+    
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
+    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
+    th { background: rgba(0,0,0,0.02); font-weight: bold; }
+    header .container { display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
+    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
+    nav a:hover { color: var(--accent); }
+    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
+    footer .container { display: flex; justify-content: space-between; align-items: center; }
+    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
+    footer a:hover { color: var(--accent); }
+    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
+    .p-bar a { color: #fff; text-decoration: underline; }
+  </style>
 </head>
 <body>
-
-<header>
-    <div class="header-container">
-        <div class="logo">Magok Midnight</div>
-        <nav>
-            <a href="index.html">홈</a>
-            <a href="about.html">소개</a>
-            <a href="blog.html">블로그</a>
-        </nav>
+  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
+  <header>
+    <div class="container">
+      <a href="index.html" class="logo">마곡.코인노래방</a>
+      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
     </div>
-</header>
-
-<div class="main-content">
-    <h1>마곡 로컬 대장형이 털어놓는 솔직 이야기</h1>
-    <p>어이 브로들! 마곡 코인노래방 가이드 채널의 문을 활짝 열어둔 마곡 대장형이야. 솔직히 이 사이트 왜 기획했느냐고? 나도 마곡나루역이 개발되기 전 논밭일 때부터 이 동네에서 터를 뚫고 산 골수 주민이거든. 갑자기 빌딩숲 생기면서 온갖 번쩍이는 밤문화가 판치는데, 진정으로 직장인들을 위한 투명하고 가성비 꽉 찬 쉼터 정보가 너무 안 보여서 홧김에 만들었어.</p>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
+        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
+      </div>
+    </section>
     
-    <div class="highlight-box">
-        <h3>마곡나루 대장형의 의리 원칙</h3>
-        <p style="margin-top: 10px;">1. **정직성 100%:** 추가 수수료 받아 챙기는 악질 삐끼들 싹 다 블랙리스트 행.<br>
-        2. **실시간 프리미엄 연결:** 저렴한 코노부터 럭셔리 셔츠룸까지 견적 비교 조율.<br>
-        3. **브로맨스 신뢰:** 언제나 형들의 유쾌하고 유익한 밤거리 등대 역할 수행.</p>
-    </div>
-
-    <p>우리는 허술한 광고글로 형들의 눈과 귀를 흐리지 않아. 마곡나루, 발산, 가양역 등 강서구 전역의 핫플레이스 사장님들과 직통으로 연결된 탄탄한 제휴 라인을 통해 형들에게 절대 실패 없는 불타는 주말과 화끈한 밤을 선사해줄 수 있지. 오늘 2차 룸 예약이나 제휴 꿀팁이 필요하다면 주저 말고 언제든 직통 핫라인으로 든든하게 뚫어라!</p>
-
-    <div class="team-profile">
-        <div>
-            <h3>마곡 밤거리 코디네이터 대장형</h3>
-            <p>강서 전역에서 형들의 든든한 가성비 방패막이가 되어줄게. 믿고 편하게 번호 저장해 둬!</p>
-            <p style="font-weight: 700; color: #fff; margin-top: 10px;">직통 상담 핫라인: 010-6279-0862</p>
+    <section class="content-section">
+      <div class="container">
+        <div class="card">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
+          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 마곡 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나도 귀하게 쓰이는 역대급 하이엔드 코인노래방을 만들겠다고. 그렇게 다듬어진 예약 라인이 010-6279-0862다.</p>
         </div>
+
+        <div class="card" style="margin-top:40px;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
+          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
+          
+        <table>
+          <thead>
+            <tr><th>코인 할인 패키지</th><th>곡 수/시간</th><th>기본가</th><th>예약 할인가 (010-6279-0862)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>동전 코인 패키지 A</td><td>12곡</td><td>5,000원</td><td><strong>4,000원</strong></td></tr>
+            <tr><td>동전 대량 패키지 B</td><td>30곡</td><td>10,000원</td><td><strong>8,000원</strong></td></tr>
+            <tr><td>시간제 단체 패키지 C</td><td>60분 무제한</td><td>15,000원</td><td><strong>12,000원</strong></td></tr>
+          </tbody>
+        </table>
+      
+          <div style="margin-top:30px; text-align:center;">
+            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:40px;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
+          <p style="font-size:1.1rem; line-height:1.9;">상세 찾아오시는 길: 마곡 지하철역 출구에서 도보 30초 컷 상가 2층에 위치해 있어 눈비 와도 뛰어가기 너무 편함. 주변 유명 코스들과 직결되어 있어서 데이트 코스 마지막 방점으로 완벽하다.</p>
+        </div>
+
+        <div style="margin-top:60px;">
+          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
+          <div class="review-grid">
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>최요한</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">위생 상태가 코노 중에 진짜 탑입니다. 갈 때마다 소독 깨끗이 되어 있어서 믿고 부릅니다.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-23</small>
     </div>
-</div>
-
-<footer>
-    <p>상호: 마곡 코노 연합 크루 | 대표자: 마곡큰형</p>
-    <p>문의 직통 전화: <strong>010-6279-0862</strong> (부재 시 문자 필수)</p>
-    <p>&copy; 2026 Magok Midnight. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
-</footer>
-
+  
+    <div class="review-card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
+        <strong>백호진</strong>
+        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+      </div>
+      <p style="font-size:0.9rem; color:var(--muted);">당산 코인노래방 할인 꿀 정보 진짜 대박이네요. 실장님 010-6279-0862 연락하니 엄청 친절하십니다.</p>
+      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-27</small>
+    </div>
+  </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div>&copy; 2026 마곡 코인노래방 스페셜 가이드. All Rights Reserved.</div>
+      <div>
+        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
